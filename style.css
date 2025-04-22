@@ -39,7 +39,7 @@ section, footer{
 h1, h2{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-     font-style: normal;
+    font-style: normal;
 }
 
 h1{
@@ -123,6 +123,9 @@ header img{
 .jidelak{
     text-align: center;
 }
+.jidelak .container{
+    padding-block: 0;
+}
 .jidelak h2{
     margin-top: 0;
     margin-bottom: 40px;
@@ -132,11 +135,15 @@ header img{
     border: 1px var(--color-secondary-bright) solid;
     text-align: center;
     padding: 30px 20px;
-    margin-block: 30px;
+    margin-bottom: 30px;
     border-radius: var(--radius);
 }
 .karta h3{
     color: var(--color-secondary);
+    margin: 20px 0 0 0;
+}
+.karta p{
+    margin-block: 20px;
 }
 .karta a{
     color: var(--color-primary);
@@ -145,6 +152,9 @@ header img{
 }
 .karta a:hover{
     text-decoration: underline;
+}
+.karta:nth-child(4){
+    margin-bottom: 0;
 }
 
 /* -----rozvoz----- */
@@ -182,7 +192,10 @@ header img{
 }
 
 .rozvoz_popis h2{
-    margin-top: 0;
+    margin: 0 0 40px 0;
+}
+.rozvoz_popis p{
+    margin: 40px 0;
 }
 
 /* -----paticka----- */
@@ -196,6 +209,7 @@ footer img{
 }
 footer a{
     color: var(--color-secondary-bright);
+    margin-right: 10px;
 }
 footer ul{
     list-style: none;
@@ -205,11 +219,14 @@ footer ul{
 footer li{
     display: inline;
 }
-footer a{
-    margin-right: 10px;
+footer .container{
+    padding-block: 0;
 }
 .logo_adresa{
     margin-bottom: 20px;
+}
+.menu_copy p{
+    margin-bottom: 0;
 }
 
 /* -----tady styluju pro tablet ----- */
@@ -266,6 +283,12 @@ footer a{
     footer .container{
         display: flex;
         justify-content: space-between;
+    }
+    footer .logo_adresa{
+        margin: 0;
+    }
+    footer .logo_adresa p{
+        margin-bottom: 0;
     }
 }
 
